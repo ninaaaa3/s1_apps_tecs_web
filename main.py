@@ -13,6 +13,9 @@ def hello():
 
 @app.get("/time")
 def return_datetime():
-    respuesta = c.request(servidor_ntp)
-    fecha_actual = datetime.datetime.fromtimestamp(respuesta.tx_time)
-    return fecha_actual
+    try:
+        respuesta = c.request(servidor_ntp)
+        fecha_actual = datetime.datetime.fromtimestamp(respuesta.tx_time)
+        return fecha_actual
+    except:
+        print(f'Error de conexión a {servidor_ntp}')
