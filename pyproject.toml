@@ -1,14 +1,16 @@
 [project]
 name = "s1-apps-tecs-web"
 version = "0.1.0"
-description = "n"
+description = ""
 authors = [
     {name = "Your Name",email = "you@example.com"}
 ]
-license = {text = "n"}
 readme = "README.md"
-requires-python = "n"
+requires-python = ">=3.12"
 dependencies = [
+    "fastapi (>=0.115.12,<0.116.0)",
+    "pytest (>=8.3.5,<9.0.0)",
+    "uvicorn (>=0.34.0,<0.35.0)"
 ]
 
 
