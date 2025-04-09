@@ -6,7 +6,7 @@ COPY ./ /app
 
 RUN pip install poetry==2.1.2
 
-RUN poetry install
+RUN poetry install --no-root
 
 EXPOSE 8000
 
