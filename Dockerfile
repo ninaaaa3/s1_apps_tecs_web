@@ -12,6 +12,4 @@ EXPOSE 8000
 
 COPY . .
 
-RUN cd api
-
 CMD ["poetry", "run", "uvicorn", "main:app", "--reload" ]
