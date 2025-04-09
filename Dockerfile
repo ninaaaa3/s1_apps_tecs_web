@@ -14,4 +14,4 @@ COPY . .
 
 RUN cd api
 
-CMD [ "poetry", "run", "uvicorn", "main:app --reload" ]
+CMD ["poetry", "run", "uvicorn", "main:app", "--reload" ]
