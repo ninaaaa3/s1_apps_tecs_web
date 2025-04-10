@@ -30,7 +30,7 @@ RUN pip install poetry==2.1.2
 WORKDIR $PYSETUP_PATH
 COPY poetry.lock pyproject.toml ./
 
-RUN poetry install --no-dev
+RUN poetry install --no-root
 
 FROM python-base as development
 ENV FASTAPI_ENV=development
