@@ -20,14 +20,14 @@ Una API sencilla desarrollada con **FastAPI** que expone un endpoint para obtene
   - `/` – Mensaje de bienvenida.  
   - `/time` – Consulta NTP y devuelve fecha/hora actual en JSON.
 - **Servidor uvicorn** en puerto **8000**.
-- **Pruebas unitarias** con pytest, incluyendo casos límite.
+- **Prueba unitaria** con pytest.
 - **Dockerfile** optimizado y funcional.
 - **CI/CD con GitHub Actions:** lint, test, build y publish.
 - **Código comentado y legible.**
 
 ## Requisitos
 
-- Python 3.9 o superior
+- Python 3.9
 - Poetry
 - Docker (opcional)
 - Git (opcional)
@@ -38,13 +38,12 @@ Una API sencilla desarrollada con **FastAPI** que expone un endpoint para obtene
 git clone https://github.com/tuusuario/s1_apps_tecs_web.git
 cd s1_apps_tecs_web
 poetry install
-poetry shell
 ```
 
 ## Uso Local
 
 ```bash
-uvicorn main:app --reload --port 8000
+poetry run uvicorn main:app --reload --port 8000
 ```
 
 - [http://127.0.0.1:8000/](http://127.0.0.1:8000/)

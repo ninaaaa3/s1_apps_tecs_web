@@ -12,4 +12,4 @@ EXPOSE 8000
 
 COPY . .
 
-CMD ["poetry", "run", "uvicorn", "main:app", "--reload" ]
+CMD ["poetry", "run", "uvicorn", "main:app"]
