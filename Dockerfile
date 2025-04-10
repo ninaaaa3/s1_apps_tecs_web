@@ -12,4 +12,4 @@ RUN poetry install --no-root
 
 EXPOSE 8000
 
-ENTRYPOINT ["poetry", "run", "uvicorn", "main:app", "--reload"]
+ENTRYPOINT ["poetry", "run", "uvicorn", "main:app"]
