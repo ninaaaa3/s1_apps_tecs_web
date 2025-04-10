@@ -10,6 +10,4 @@ RUN poetry install --no-root
 
 EXPOSE 8000
 
-COPY . .
-
-CMD ["uvicorn", "--reload", "main:app"]
+CMD ["poetry", "run", "uvicorn", "main:app", "--reload"]
