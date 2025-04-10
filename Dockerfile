@@ -25,7 +25,7 @@ RUN apt-get update \
         curl \
         build-essential
 
-RUN curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
+RUN pip install poetry==2.1.2
 
 WORKDIR $PYSETUP_PATH
 COPY poetry.lock pyproject.toml ./
